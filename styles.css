@@ -1,0 +1,174 @@
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+  }
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--background);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+main{
+    margin-top: -90px;
+    margin-left: 50px;
+    min-height: 800px;
+    height: 800px;
+    width: 65vw;
+    background-color: var(--main-background);
+    z-index: -1;
+}
+
+footer{
+    display: flex;
+}
+
+nav{
+    width: 100vw;
+}
+
+ul{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul:first-child{
+    margin-left: 30px;
+}
+
+li{
+    transition: 0.1s;
+}
+
+.navhover:hover{
+    border-bottom: 1px solid var(--text);
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#search{
+    display: flex;
+    background-image: url(./assets/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px;
+    background-position-x: 10px;
+    padding-left: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+#button{
+    background-color: var(--button);
+    color: white;
+    width: 274px;
+    height: 90px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#button:hover{
+    background-color: #cf1313;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.bag{
+    display: flex;
+    margin-right: 50px;
+}
+
+.logo{
+    margin-top: -5px;
+    width: 50px;
+    height: 50px;
+}
+
+.container{
+    margin-left: 70px;
+    width: 357px;
+    height: 533px;
+}
+
+.groupContainers{
+    display: flex;
+}
+
+.groupimages{
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+    margin-top: -5px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.navFooter{
+    margin-top: -15px;
+}
+
+.simpleText{
+    font-weight: 700;
+    color: var(--text-description);
+    margin-top: -30px;
+}
+
+.footerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+    color: white;
+    width: 300px;
+    height: 150px;
+}
+
+.liFooter{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.liFooter:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
